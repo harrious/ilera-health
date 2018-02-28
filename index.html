@@ -1,0 +1,3893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INTRA-OP</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="inn-container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="side-holder">
+            <div class="side-sec pre-inision">
+              <p>PRE-INISION</p>
+              <div class="form-check">
+      					<label onclick="window.location.href='#staff'">
+      						<input type="checkbox" name="check"> <span class="label-text">Staff</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#counts'">
+      						<input type="checkbox" name="check"> <span class="label-text">Counts</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#pre-op'">
+      						<input type="checkbox" name="check"> <span class="label-text">Pre-op Skin</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#site-pre'">
+      						<input type="checkbox" name="check"> <span class="label-text">Site Prep</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#positioning'">
+      						<input type="checkbox" name="check"> <span class="label-text">Positioning</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#lines'">
+      						<input type="checkbox" name="check"> <span class="label-text">Lines/Drains</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#timeout'">
+      						<input type="checkbox" name="check"> <span class="label-text">Timeout</span>
+      					</label>
+      				</div>
+            </div>
+            <div class="side-sec procedure">
+              <p>PROCEDURE</p>
+              <div class="form-check">
+      					<label onclick="window.location.href='#procedures'">
+      						<input type="checkbox" name="check"> <span class="label-text">Procedures</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#supplies'">
+      						<input type="checkbox" name="check"> <span class="label-text">Supplies</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#equipment'">
+      						<input type="checkbox" name="check"> <span class="label-text">Equipment</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Instruments</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#intra-op-meds'">
+      						<input type="checkbox" name="check"> <span class="label-text">Intra-op Meds</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#implants'">
+      						<input type="checkbox" name="check"> <span class="label-text">Implants</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#specimens'">
+      						<input type="checkbox" name="check"> <span class="label-text">Specimens</span>
+      					</label>
+      				</div>
+            </div>
+            <div class="side-sec closing">
+              <p>CLOSING</p>
+              <div class="form-check">
+      					<label onclick="window.location.href='#site-completion'">
+      						<input type="checkbox" name="check"> <span class="label-text">Site Completion</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#post-op'">
+      						<input type="checkbox" name="check"> <span class="label-text">Post-op Skin</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#cosmetic'">
+      						<input type="checkbox" name="check"> <span class="label-text">Cosmetic Info</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#care'">
+      						<input type="checkbox" name="check"> <span class="label-text">Care Plan</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Verify</span>
+      					</label>
+      				</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="main-view">
+            <div id="staff" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Staff</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <form class="search">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="Search Staff" data-toggle="modal" data-target="#addModal">
+                 <div class="input-group-btn">
+                   <button class="btn btn-default" ><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                 </div>
+               </div>
+             </form>
+             <button class="add-visitor dark-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>Add visitor</button>
+             <div class="row">
+               <div class="col-md-3 col-md-offset-6">
+                 <p class="tm-title">Time In</p>
+               </div>
+               <div class="col-md-3">
+                 <p class="tm-title">Time Out</p>
+               </div>
+             </div>
+             <p class="sg-title"><span>Surgeons</span></p>
+             <div class="row">
+               <div class="col-md-3">
+                 <p>Hunter Timely, MD</p>
+               </div>
+               <div class="col-md-2">
+                 <p>Panel 1</p>
+               </div>
+               <div class="col-md-1 col1">
+                 <p>Primary</p>
+               </div>
+               <div class="col-md-3">
+                 <form class="time" method="post">
+                   <div class="input-group">
+                 		<input class="form-control reg-time" name="reg_time" type="time" value="14:34">
+                    <span class="input-group-addon basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                  </div>
+                  <button class="light-btn" type="button" name="button"><i class="fa fa-sign-in" aria-hidden="true"></i> Now</button>
+                 </form>
+               </div>
+               <div class="col-md-3">
+                 <form class="time" method="post">
+                   <div class="input-group">
+                 		<input class="form-control reg-time" name="reg_time" type="time" value="14:34">
+                    <span class="input-group-addon basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                  </div>
+                  <button class="light-btn" type="button" name="button"><i class="fa fa-sign-in" aria-hidden="true"></i> Now</button>
+                 </form>
+               </div>
+             </div>
+             <p class="sg-title"><span>Staff</span></p>
+             <div class="row">
+               <div class="col-md-3">
+                 <a class="click-add" href="#" data-toggle="modal" data-target="#click-add">Click to add…</a>
+               </div>
+               <div class="col-md-2"></div>
+               <div class="col-md-2 col1">
+                 <p>Circulator</p>
+               </div>
+               <div class="col-md-5">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a class="click-add" href="#">Click to add…</a>
+               </div>
+               <div class="col-md-2"></div>
+               <div class="col-md-2 col1">
+                 <p>Scrub Person</p>
+               </div>
+               <div class="col-md-5">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="counts" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Counts</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <form class="search" role="search">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                 <div class="input-group-btn">
+                   <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                 </div>
+               </div>
+             </form>
+             <button class="cnt-next light-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>Next</button>
+             <div class="no-count">
+               <label class="complete">
+                 <input type="checkbox" name="check"> <span class="label-text">No counts needed</span>
+               </label>
+             </div>
+             <div class="row">
+               <div class="col-md-3">
+                 <p>Reason</p>
+               </div>
+               <div class="col-md-6">
+                 <p>Summary</p>
+               </div>
+             </div>
+             <p class="sg-title"><span>Panel 1: General with Hunter Timely, MD</span></p>
+             <div class="row">
+               <div class="col-md-3">
+                 <a href="#" class="click-add">Initial</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Items Counted Sponge;</span>
+                 <span>Needles/Sharps;</span>
+                 <span>Instruments</span>
+               </div>
+               <div class="col-md-1">
+                 <div class="dropdown">
+                  <button class="drop-cc dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <div class="reason ct-box">
+               <p class="click-add">Initial</p>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Items counted</p>
+                 </div>
+                 <div class="col-md-9">
+                   <input class="btn-input" type="checkbox" name="ini" value="" id="ini1">
+                   <label for="ini1" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Sponge
+                   </label>
+                   <input class="btn-input" type="checkbox" name="ini" value="" id="ini2">
+                   <label for="ini2" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Needles/Sharps
+                   </label>
+                   <input class="btn-input" type="checkbox" name="ini" value="" id="ini3">
+                   <label for="ini3" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Instruments
+                   </label>
+                   <span class="ini-check">
+                     <input class="" type="checkbox" name="ini" value="" id="ini4">
+                     <label for="ini4" class="label-btn">
+                       Other
+                     </label>
+                   </span>
+                   <span class="ini-check">
+                     <input class="" type="checkbox" name="ini" value="" id="ini5">
+                     <label for="ini5" class="label-btn">
+                       None
+                     </label>
+                   </span>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Counted by</p>
+                 </div>
+                 <div class="col-md-2">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-7">
+                   <input class="btn-input" type="radio" name="conby" value="" id="conby1">
+                   <label for="conby1" class="light-btn label-btn">
+                     Dana Anberlin, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="conby" value="" id="conby2">
+                   <label for="conby2" class="light-btn label-btn">
+                     Dana Kiss, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="conby" value="" id="conby3">
+                   <label for="conby3" class="light-btn label-btn">
+                     Skylar Merecre, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="conby" value="" id="conby4">
+                   <label for="conby4" class="light-btn label-btn">
+                     Brice Abiesirish, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="conby" value="" id="conby5">
+                   <label for="conby5" class="light-btn label-btn">
+                     Hunter Timely, MD
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Verified by</p>
+                 </div>
+                 <div class="col-md-2">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-7">
+                   <input class="btn-input" type="radio" name="verby" value="" id="verby1">
+                   <label for="verby1" class="light-btn label-btn">
+                     Dana Anberlin, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="verby" value="" id="verby2">
+                   <label for="verby2" class="light-btn label-btn">
+                     Dana Kiss, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="verby" value="" id="verby3">
+                   <label for="verby3" class="light-btn label-btn">
+                     Skylar Merecre, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="verby" value="" id="verby4">
+                   <label for="verby4" class="light-btn label-btn">
+                     Brice Abiesirish, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="verby" value="" id="verby5">
+                   <label for="verby5" class="light-btn label-btn">
+                     Hunter Timely, MD
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   comments
+                 </div>
+                 <div class="col-md-9">
+                   <textarea name="name" rows="4" cols="50"></textarea>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-9"></div>
+                 <div class="col-md-3">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a href="#" class="click-add">Closing</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Items Counted Sponge;</span>
+                 <span>Needles/Sharps;</span>
+                 <span>Instruments</span>
+               </div>
+               <div class="col-md-1">
+                 <div class="dropdown">
+                  <button class="drop-cc dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <div class="reason ct-box">
+               <p class="click-add">Closing</p>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Items counted</p>
+                 </div>
+                 <div class="col-md-9">
+                   <input class="btn-input" type="checkbox" name="clo" value="" id="clo1">
+                   <label for="clo1" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Sponge
+                   </label>
+                   <input class="btn-input" type="checkbox" name="clo" value="" id="clo2">
+                   <label for="clo2" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Needles/Sharps
+                   </label>
+                   <input class="btn-input" type="checkbox" name="clo" value="" id="clo3">
+                   <label for="clo3" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Instruments
+                   </label>
+                   <span class="ini-check">
+                     <input class="" type="checkbox" name="ini" value="" id="clo4">
+                     <label for="clo4" class="label-btn">
+                       Other
+                     </label>
+                   </span>
+                   <span class="ini-check">
+                     <input class="" type="checkbox" name="ini" value="" id="clo5">
+                     <label for="clo5" class="label-btn">
+                       None
+                     </label>
+                   </span>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Counted by</p>
+                 </div>
+                 <div class="col-md-2">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-7">
+                   <input class="btn-input" type="radio" name="clo-conby" value="" id="clo-conby1">
+                   <label for="clo-conby1" class="light-btn label-btn">
+                     Dana Anberlin, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-conby" value="" id="clo-conby2">
+                   <label for="clo-conby2" class="light-btn label-btn">
+                     Dana Kiss, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-conby" value="" id="clo-conby3">
+                   <label for="clo-conby3" class="light-btn label-btn">
+                     Skylar Merecre, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-conby" value="" id="clo-conby4">
+                   <label for="clo-conby4" class="light-btn label-btn">
+                     Brice Abiesirish, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-conby" value="" id="clo-conby5">
+                   <label for="clo-conby5" class="light-btn label-btn">
+                     Hunter Timely, MD
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Verified by</p>
+                 </div>
+                 <div class="col-md-2">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-7">
+                   <input class="btn-input" type="radio" name="clo-verby" value="" id="clo-verby1">
+                   <label for="clo-verby1" class="light-btn label-btn">
+                     Dana Anberlin, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-verby" value="" id="clo-verby2">
+                   <label for="clo-verby2" class="light-btn label-btn">
+                     Dana Kiss, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-verby" value="" id="clo-verby3">
+                   <label for="clo-verby3" class="light-btn label-btn">
+                     Skylar Merecre, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-verby" value="" id="clo-verby4">
+                   <label for="clo-verby4" class="light-btn label-btn">
+                     Brice Abiesirish, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="clo-verby" value="" id="clo-verby5">
+                   <label for="clo-verby5" class="light-btn label-btn">
+                     Hunter Timely, MD
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   Count correct?
+                 </div>
+                 <div class="col-md-8 col-md-offset-1">
+                   <input class="btn-input" type="radio" name="cor" value="" id="cor-1">
+                   <label for="cor-1" class="light-btn label-btn">
+                     Yes
+                   </label>
+                   <input class="btn-input" type="radio" name="cor" value="" id="cor2">
+                   <label for="cor2" class="light-btn label-btn">
+                     No
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   comments
+                 </div>
+                 <div class="col-md-9">
+                   <textarea name="name" rows="4" cols="50"></textarea>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-9"></div>
+                 <div class="col-md-3">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a href="#" class="click-add">Final</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Items Counted Sponge;</span>
+                 <span>Needles/Sharps;</span>
+                 <span>Instruments</span>
+               </div>
+               <div class="col-md-1">
+                 <div class="dropdown">
+                  <button class="drop-cc dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <div class="reason ct-box">
+               <p class="click-add">Final</p>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Items counted</p>
+                 </div>
+                 <div class="col-md-9">
+                   <input class="btn-input" type="checkbox" name="fin" value="" id="fin1">
+                   <label for="fin1" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Sponge
+                   </label>
+                   <input class="btn-input" type="checkbox" name="fin" value="" id="fin2">
+                   <label for="fin2" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Needles/Sharps
+                   </label>
+                   <input class="btn-input" type="checkbox" name="fin" value="" id="fin3">
+                   <label for="fin3" class="light-btn label-btn">
+                     <i class="fa fa-check"></i>
+                     Instruments
+                   </label>
+                   <span class="ini-check">
+                     <input class="" type="checkbox" name="ini" value="" id="fin4">
+                     <label for="fin4" class="label-btn">
+                       Other
+                     </label>
+                   </span>
+                   <span class="ini-check">
+                     <input class="" type="checkbox" name="ini" value="" id="fin5">
+                     <label for="fin5" class="label-btn">
+                       None
+                     </label>
+                   </span>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Counted by</p>
+                 </div>
+                 <div class="col-md-2">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-7">
+                   <input class="btn-input" type="radio" name="fin-conby" value="" id="fin-conby1">
+                   <label for="clo-conby1" class="light-btn label-btn">
+                     Dana Anberlin, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-conby" value="" id="fin-conby2">
+                   <label for="fin-conby2" class="light-btn label-btn">
+                     Dana Kiss, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-conby" value="" id="fin-conby3">
+                   <label for="fin-conby3" class="light-btn label-btn">
+                     Skylar Merecre, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-conby" value="" id="fin-conby4">
+                   <label for="fin-conby4" class="light-btn label-btn">
+                     Brice Abiesirish, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-conby" value="" id="fin-conby5">
+                   <label for="fin-conby5" class="light-btn label-btn">
+                     Hunter Timely, MD
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   <p>Verified by</p>
+                 </div>
+                 <div class="col-md-2">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-7">
+                   <input class="btn-input" type="radio" name="fin-verby" value="" id="fin-verby1">
+                   <label for="fin-verby1" class="light-btn label-btn">
+                     Dana Anberlin, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-verby" value="" id="fin-verby2">
+                   <label for="fin-verby2" class="light-btn label-btn">
+                     Dana Kiss, RN
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-verby" value="" id="fin-verby3">
+                   <label for="fin-verby3" class="light-btn label-btn">
+                     Skylar Merecre, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-verby" value="" id="fin-verby4">
+                   <label for="fin-verby4" class="light-btn label-btn">
+                     Brice Abiesirish, MD
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-verby" value="" id="fin-verby5">
+                   <label for="fin-verby5" class="light-btn label-btn">
+                     Hunter Timely, MD
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   Count correct?
+                 </div>
+                 <div class="col-md-8 col-md-offset-1">
+                   <input class="btn-input" type="radio" name="fin-cor" value="" id="fin-cor-1">
+                   <label for="fin-cor-1" class="light-btn label-btn">
+                     Yes
+                   </label>
+                   <input class="btn-input" type="radio" name="fin-cor" value="" id="fin-cor2">
+                   <label for="fin-cor2" class="light-btn label-btn">
+                     No
+                   </label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-3">
+                   comments
+                 </div>
+                 <div class="col-md-9">
+                   <textarea name="name" rows="4" cols="50"></textarea>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-9"></div>
+                 <div class="col-md-3">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="pre-op" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Pre-op Skin Condition</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+             <button class="dark-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>New skin condition</button>
+             <div class="new-item ct-box">
+               <p>New item</p>
+               <div class="site">
+                 <p>Site</p>
+                 <div class="site-cnt">
+                   <div class="btns">
+                     <input class="btn-input" type="radio" name="site" value="" id="site1">
+                     <label for="site1" class="light-btn label-btn">
+                       Grounding
+                     </label>
+                     <input class="btn-input" type="radio" name="site" value="" id="site2">
+                     <label for="site2" class="light-btn label-btn">
+                       Operative
+                     </label>
+                     <input class="btn-input" type="radio" name="site" value="" id="site3">
+                     <label for="site3" class="light-btn label-btn">
+                       Overall
+                     </label>
+                     <input class="btn-input" type="radio" name="site" value="" id="site4">
+                     <label for="site4" class="light-btn label-btn">
+                       Positioning
+                     </label>
+                     <input class="btn-input" type="radio" name="site" value="" id="site5">
+                     <label for="site5" class="light-btn label-btn">
+                       Tourniquet
+                     </label>
+                     <input class="btn-input" type="radio" name="site" value="" id="site6">
+                     <label for="site6" class="light-btn label-btn">
+                       Warming
+                     </label>
+                   </div>
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="site condition">
+                 <p>Condition</p>
+                 <div class="condition-cnt">
+                   <div class="btns">
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con1">
+                     <label for="con1" class="light-btn label-btn">
+                       Warm, Dry, Intact
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con2">
+                     <label for="con2" class="light-btn label-btn">
+                       Abrasion
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con3">
+                     <label for="con3" class="light-btn label-btn">
+                       Ashem Grey
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con4">
+                     <label for="con4" class="light-btn label-btn">
+                       Birthmarks
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con5">
+                     <label for="con5" class="light-btn label-btn">
+                       Bleeding
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con6">
+                     <label for="con6" class="light-btn label-btn">
+                       Blotchy
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con7">
+                     <label for="con7" class="light-btn label-btn">
+                       Bruising
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con8">
+                     <label for="con8" class="light-btn label-btn">
+                       Burns
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con9">
+                     <label for="con9" class="light-btn label-btn">
+                       Cool
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con10">
+                     <label for="con10" class="light-btn label-btn">
+                       Cracked
+                     </label>
+                     <input class="btn-input" type="checkbox" name="con" value="" id="con11">
+                     <label for="con11" class="light-btn label-btn">
+                       Cyanotic
+                     </label>
+                   </div>
+                 </div>
+                 <button class="light-btn" type="button" name="button">See all values</button>
+               </div>
+               <div class="site comments">
+                 <label for="">Comments <br>
+                   <textarea name="name" rows="4" cols="150"></textarea>
+                 </label>
+               </div>
+               <div class="row">
+                 <div class="col-md-9"></div>
+                 <div class="col-md-3">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="site-pre" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Site Preparation</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+             <button class="dark-btn pre-site-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>New preparation site</button>
+             <div class="new-site-pre ct-box">
+               <div class="row">
+                 <div class="col-md-5">
+                   <p>Site</p>
+                   <div class="new-site-list">
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list1">
+                     <label for="sit-list1" class="light-btn label-btn">
+                       Arm Lower
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list2">
+                     <label for="sit-list2" class="light-btn label-btn">
+                       Arm Upper
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list3">
+                     <label for="sit-list3" class="light-btn label-btn">
+                       Axilla
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list4">
+                     <label for="sit-list4" class="light-btn label-btn">
+                       Back
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list5">
+                     <label for="sit-list5" class="light-btn label-btn">
+                       Breast
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list6">
+                     <label for="sit-list6" class="light-btn label-btn">
+                       Buttocks
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list7">
+                     <label for="sit-list7" class="light-btn label-btn">
+                       Cervical Anterior
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list8">
+                     <label for="sit-list8" class="light-btn label-btn">
+                       Cervical Posterior
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list9">
+                     <label for="sit-list9" class="light-btn label-btn">
+                       Chest
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list10">
+                     <label for="sit-list10" class="light-btn label-btn">
+                       Ear
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list11">
+                     <label for="sit-list11" class="light-btn label-btn">
+                       Eye
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list12">
+                     <label for="sit-list12" class="light-btn label-btn">
+                       Face
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list13">
+                     <label for="sit-list13" class="light-btn label-btn">
+                       Finger(s)
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list14">
+                     <label for="sit-list14" class="light-btn label-btn">
+                       Flank
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list15">
+                     <label for="sit-list15" class="light-btn label-btn">
+                       Foot
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list16">
+                     <label for="sit-list16" class="light-btn label-btn">
+                       Groin
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list17">
+                     <label for="sit-list17" class="light-btn label-btn">
+                       Hand
+                     </label>
+                     <input class="btn-input" type="radio" name="sit-list" value="" id="sit-list18">
+                     <label for="sit-list18" class="light-btn label-btn">
+                       Head
+                     </label>
+                   </div>
+                   <p>Sample</p>
+                   <div class="condition-cnt">
+                     <input class="btn-input" type="radio" name="sam" value="" id="sam1">
+                     <label for="sam1" class="light-btn label-btn">
+                       Left
+                     </label>
+                     <input class="btn-input" type="radio" name="sam" value="" id="sam2">
+                     <label for="sam2" class="light-btn label-btn">
+                       Right
+                     </label>
+                     <input class="btn-input" type="radio" name="sam" value="" id="sam3">
+                     <label for="sam3" class="light-btn label-btn">
+                       Sample
+                     </label>
+                     <input class="btn-input" type="radio" name="sam" value="" id="sam4">
+                     <label for="sam4" class="light-btn label-btn">
+                       N/A
+                     </label>
+                   </div>
+                   <p>Prepped by</p>
+                   <div class="condition-cnt">
+                     <textarea name="name" rows="3" cols="50"></textarea>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-md-offset-1">
+                   <div class="site">
+                     <p>Was skin prep dry before draping</p>
+                     <div class="site-cnt">
+                       <input class="btn-input" type="radio" name="pre" value="" id="pre1">
+                       <label for="pre1" class="light-btn label-btn">
+                         Yes
+                       </label>
+                       <input class="btn-input" type="radio" name="pre" value="" id="pre2">
+                       <label for="pre2" class="light-btn label-btn">
+                         No
+                       </label>
+                     </div>
+                   </div>
+                   <div class="site condition">
+                     <p>Scrub Solustions</p>
+                     <div class="condition-cnt">
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr1">
+                       <label for="scr1" class="light-btn label-btn">
+                         Alcohol 70%
+                       </label>
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr2">
+                       <label for="scr2" class="light-btn label-btn">
+                         Baby Shampoo
+                       </label>
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr3">
+                       <label for="scr3" class="light-btn label-btn">
+                         Batadine
+                       </label>
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr4">
+                       <label for="scr4" class="light-btn label-btn">
+                         Chlorohexidine
+                       </label>
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr5">
+                       <label for="scr5" class="light-btn label-btn">
+                         Iodine
+                       </label>
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr6">
+                       <label for="scr6" class="light-btn label-btn">
+                         Peroxide
+                       </label>
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr7">
+                       <label for="scr7" class="light-btn label-btn">
+                         Povidone Scrub
+                       </label>
+                       <input class="btn-input" type="radio" name="scr" value="" id="scr8">
+                       <label for="scr8" class="light-btn label-btn">
+                         Sterile Saline
+                       </label>
+                     </div>
+                     <button class="light-btn" type="button" name="button">See all values</button>
+                   </div>
+                   <div class="site condition">
+                     <p>Paint Solustions</p>
+                     <div class="condition-cnt">
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai1">
+                       <label for="pai1" class="light-btn label-btn">
+                         Alcohol 70%
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai2">
+                       <label for="pai2" class="light-btn label-btn">
+                         Batadine
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai3">
+                       <label for="pai3" class="light-btn label-btn">
+                         Iodine
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai4">
+                       <label for="pai4" class="light-btn label-btn">
+                         Peroxide
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai5">
+                       <label for="pai5" class="light-btn label-btn">
+                         Povidone-Iodine
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai6">
+                       <label for="pai6" class="light-btn label-btn">
+                         Povidone Solution
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai7">
+                       <label for="pai7" class="light-btn label-btn">
+                         Sterile Water
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai8">
+                       <label for="pai8" class="light-btn label-btn">
+                         Sterile Saline
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai9">
+                       <label for="pai9" class="light-btn label-btn">
+                         None
+                       </label>
+                       <input class="btn-input" type="radio" name="pai" value="" id="pai10">
+                       <label for="pai10" class="light-btn label-btn">
+                         Other
+                       </label>
+                     </div>
+                     <button class="light-btn" type="button" name="button">See all values</button>
+                   </div>
+                 </div>
+               </div>
+               <div class="site comments">
+                 <label for="">Comments <br>
+                   <textarea name="name" rows="4" cols="150"></textarea>
+                 </label>
+               </div>
+               <div class="row">
+                 <div class="col-md-9"></div>
+                 <div class="col-md-3">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-3"></div>
+               <div class="col-md-6">
+                 <p class="tb-ttl">Summary</p>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a class="click-add" href="#">Missing site information</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Scrubbed with <b>Missing</b>;</span>
+                 <span>Painted with <b>Missing</b>;</span>
+                 <span>Laterality:<b>N/A</b></span>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-files-o" aria-hidden="true"></i></button>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="positioning" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Positioning</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+             <button class="dark-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>New Position</button>
+             <div class="positioning-cnt ct-box">
+               <p class="tp-top">SURGICAL LAPAROSCOPY WITH PARTIAL COLECTOMY AND ANASTOMOSIS - Position 1</p>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Position template:</p>
+                 </div>
+                 <div class="col-md-3 site-cnt">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term" data-toggle="modal" data-target="#posModal">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Body:</p>
+                 </div>
+                 <div class="col-md-3 site-cnt">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term"data-toggle="modal" data-target="#posModal">
+                      <button type="button" name="button" class="click-close comment-btn" data-toggle="modal" data-target="#comtModal">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                      </button>
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-1 col-md-offset-1">
+                   <p>Head:</p>
+                 </div>
+                 <div class="col-md-3 site-cnt">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term"data-toggle="modal" data-target="#posModal">
+                      <button type="button" name="button" class="click-close comment-btn" data-toggle="modal" data-target="#comtModal">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                      </button>
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Devices:</p>
+                 </div>
+                 <div class="col-md-3">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-1 col-md-offset-1">
+                   <p>Devices:</p>
+                 </div>
+                 <div class="col-md-3">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Devices:</p>
+                 </div>
+                 <div class="col-md-3">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Positioned at:</p>
+                 </div>
+                 <div class="col-md-10">
+                   <form class="time" method="post">
+                     <div class="input-group">
+                   		<input class="form-control reg-time" name="reg_time" type="time" value="14:34">
+                      <span class="input-group-addon basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                    </div>
+                    <button class="light-btn" type="button" name="button"><i class="fa fa-sign-in" aria-hidden="true"></i>Now</button>
+                   </form>
+                   <label class="pstn-check">
+         						<input type="checkbox" name="check"> <span class="label-text">Dana Anberin, RN</span>
+         					 </label>
+                   <label class="pstn-check">
+         						<input type="checkbox" name="check"> <span class="label-text">Dana Kiss, RN</span>
+         					 </label>
+                   <label class="pstn-check">
+         						<input type="checkbox" name="check"> <span class="label-text">Skylar Mareeticum, MD</span>
+         					 </label>
+                   <label class="pstn-check">
+         						<input type="checkbox" name="check"> <span class="label-text">Brice Abiesirish, MD</span>
+         					 </label>
+                   <label class="pstn-check">
+         						<input type="checkbox" name="check"> <span class="label-text">Hunter Timely, MD</span>
+         					 </label>
+                 </div>
+               </div>
+               <div class="row pstn-txtar">
+                 <div class="col-md-2">
+                   <p>Comments</p>
+                 </div>
+                 <div class="col-md-4">
+                   <textarea name="name" rows="4" cols="50"></textarea>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-9"></div>
+                 <div class="col-md-3">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="lines" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Lines/Drains - OR Lines/Drains/Airways</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                  <p>Time taken:</p>
+                </div>
+                <div class="col-md-2">
+                  <form class="time" method="post">
+                    <div class="input-group">
+                     <input class="form-control reg-time" name="reg_time" type="time" value="14:34">
+                     <span class="input-group-addon basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                   </div>
+                  </form>
+                </div>
+                <div class="col-md-2">
+                  <form class="time" method="post">
+                    <div class="input-group">
+                     <input class="form-control reg-date" name="reg_date" type="date">
+                     <span class="input-group-addon basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                   </div>
+                  </form>
+                </div>
+              </div>
+              <div class="lines-btn">
+                <input class="btn-input" type="radio" name="lin" value="" id="lin1">
+                <label for="lin1" class="light-btn label-btn">
+                  <i class="fa fa-plus" aria-hidden="true"></i>Add Row
+                </label>
+                <input class="btn-input" type="radio" name="lin" value="" id="lin2">
+                <label for="lin2" class="light-btn label-btn">
+                  <i class="fa fa-plus" aria-hidden="true"></i>Add Group
+                </label>
+                <input class="btn-input" type="radio" name="lin" value="" id="lin3">
+                <label for="lin3" class="light-btn label-btn">
+                  <i class="fa fa-plus" aria-hidden="true"></i>Add LDA
+                </label>
+                <input class="btn-input" type="radio" name="lin" value="" id="lin4">
+                <label for="lin4" class="light-btn label-btn">
+                  <i class="fa fa-user" aria-hidden="true"></i>Values By
+                </label>
+                <input class="btn-input" type="radio" name="lin" value="" id="lin5">
+                <label for="lin5" class="light-btn label-btn">
+                  <i class="fa fa-plus" aria-hidden="true"></i>Create Node
+                </label>
+              </div>
+              <div class="surg-lap">
+                <p>SURGICAL LAPAROSCOPY WITH PARTIAL COLECTOMY AND ANASTOMOSIS - Position 1</p>
+                <div class="row">
+                  <div class="col-md-2">
+                    <p>Position template:</p>
+                  </div>
+                  <div class="col-md-3 site-cnt">
+                    <form class="search" role="search">
+                     <div class="input-group">
+                       <input type="text" class="form-control" name="srch-term" id="srch-term">
+                       <div class="input-group-btn">
+                         <button class="btn btn-default" type="submit">
+                           <i class="fa fa-search" aria-hidden="true"></i>
+                         </button>
+                       </div>
+                     </div>
+                   </form>
+                  </div>
+                </div>
+              </div>
+             <div class="row">
+               <div class="col-md-9">
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-fast-backward" aria-hidden="true"></i> Restore</button>
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-check" aria-hidden="true"></i> Accept</button>
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+               </div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="timeout" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Timeout</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <form class="search" role="search">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="Add Timeout" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                 <div class="input-group-btn">
+                   <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                 </div>
+               </div>
+             </form>
+             <button class="cnt-next light-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>Pre-incision</button>
+             <button class="cnt-next light-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>Fire Safety</button>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No active timeouts</p>
+               <p>You can use the button on the toolbar above to add a new timeout</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="procedures" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Procedures</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+             <button class="cnt-next dark-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>Add Panel</button>
+             <p>Panel 1: General with Hunter Timely. MD <button type="button" name="button" class="click-close pull-right"><i class="fa fa-angle-double-up pull-right" aria-hidden="true"></i></button></p>
+             <div class="pro-cnt">
+               <p><i class="fa fa-user" aria-hidden="true"></i> Surgeons</p>
+               <div class="pro-inn">
+                 <div class="row">
+                   <div class="col-md-4">
+                     <form class="search" role="search">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Add Surgeon" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                        </div>
+                      </div>
+                    </form>
+                   </div>
+                 </div>
+                 <div class="surgs">
+                   <div class="row">
+                     <div class="col-md-3 col-md-offset-3">
+                       <p>Role</p>
+                     </div>
+                     <div class="col-md-2">
+                       <p>Service</p>
+                     </div>
+                   </div>
+                   <hr>
+                   <div class="row">
+                     <div class="col-md-3">
+                      <a href="#" class="click-add">Hunter Timely, MD</a>
+                     </div>
+                     <div class="col-md-3">
+                       <p>Primary</p>
+                     </div>
+                     <div class="col-md-3">
+                       <p>General</p>
+                     </div>
+                   </div>
+                   <hr>
+                   <div class="row">
+                     <div class="col-md-3">
+                       <a href="#" class="click-add">Brice Abiesirish, MD</a>
+                     </div>
+                     <div class="col-md-3">
+
+                     </div>
+                     <div class="col-md-3">
+                       <p>Gynecology Oncology</p>
+                     </div>
+                     <div class="col-md-3">
+                       <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="pro-cnt">
+               <p><i class="fa fa-medkit" aria-hidden="true"></i> Procedures</p>
+               <div class="pro-inn">
+                 <div class="row">
+                   <div class="col-md-4">
+                     <form class="search" role="search">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Add Procedure" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                        </div>
+                      </div>
+                    </form>
+                   </div>
+                 </div>
+                 <div class="surgs">
+                   <div class="row">
+                     <div class="col-md-2 col-md-offset-4">
+                       <p>Anesthesia Type</p>
+                     </div>
+                     <div class="col-md-2 col-md-offset-2">
+                       <p>Approach</p>
+                     </div>
+                     <div class="col-md-1 col-md-offset-1">
+                       <p>card</p>
+                     </div>
+                   </div>
+                   <hr>
+                   <div class="row">
+                     <div class="col-md-4">
+                       <p>SURGICAL LAPAROSCOPY WITH PARTIAL COLECTOMY AND ANASTOMOSIS [44204 (CPT*)]</p>
+                     </div>
+                     <div class="col-md-2">
+                       General
+                     </div>
+                     <div class="col-md-2 col-md-offset-4">
+                       <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                       <button class="pull-right click-close" type="button" name="button"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                       <button class="pull-right click-close" type="button" name="button"><i class="fa fa-hospital-o" aria-hidden="true"></i></button>
+                     </div>
+                   </div>
+                   <div class="surgs">
+                     <div class="row">
+                       <div class="col-md-2">
+                         <p>Laterality:</p>
+                       </div>
+                       <div class="col-md-4">
+                         <button type="button" name="button" class="light-btn">Left</button>
+                         <button type="button" name="button" class="light-btn">Right</button>
+                         <button type="button" name="button" class="light-btn">Bilateral</button>
+                         <button type="button" name="button" class="light-btn">N/A</button>
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                       <div class="col-md-2">
+                         <p>Laterality Changed:</p>
+                       </div>
+                       <div class="col-md-3">
+                         <button type="button" name="button" class="light-btn">Rebuild Positioning Now</button>
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                       <div class="col-md-2">
+                         <p>Site:</p>
+                       </div>
+                       <div class="col-md-4 site-cnt">
+                         <form class="search" role="search">
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="srch-term" id="srch-term">
+                            <div class="input-group-btn">
+                              <button class="btn btn-default" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                       <div class="col-md-2">
+                         <p>Wound class:</p>
+                       </div>
+                       <div class="col-md-10">
+                         <button type="button" name="button" class="light-btn">Class I/ Clean</button>
+                         <button type="button" name="button" class="light-btn">Class II/ Clean Contaminated</button>
+                         <button type="button" name="button" class="light-btn">Class III/ Contaminated</button>
+                         <button type="button" name="button" class="light-btn">Class IV/ Dirty or Infected</button>
+                         <button type="button" name="button" class="light-btn">Other (see notes)</button>
+                         <button type="button" name="button" class="light-btn">N/A</button>
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                       <div class="col-md-2">
+                         <p>Incision closure</p>
+                       </div>
+                       <div class="col-md-10">
+                         <button type="button" name="button" class="light-btn">Deep and Superficial Layers</button>
+                         <button type="button" name="button" class="light-btn">Superficial Layers Only</button>
+                         <button type="button" name="button" class="light-btn">Deep Layers Only</button>
+                         <button type="button" name="button" class="light-btn">No Layers</button>
+                         <button type="button" name="button" class="light-btn">N/A</button>
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                       <div class="col-md-2">
+                         <p>Comments:</p>
+                       </div>
+                     </div>
+                     <hr>
+                     <a href="#" class="click-add">Additional details</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="supplies" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Supplies</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <form class="search" role="search">
+                   <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search Supplies" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                     <div class="input-group-btn">
+                       <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                     </div>
+                   </div>
+                 </form>
+                </div>
+                <div class="col-md-4 col-md-offset-5">
+                  <button type="button" name="button" class="click-close pull-right"><i class="fa fa-wrench" aria-hidden="true"></i></button>
+                  <button class="cnt-next light-btn pull-right" type="button" name="button"><i class="fa fa-trash" aria-hidden="true"></i>Waste All</button>
+                  <button class="cnt-next light-btn pull-right" type="button" name="button"><i class="fa fa-wrench" aria-hidden="true"></i>Rebuild</button>
+                  <button class="cnt-next light-btn pull-right" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i>Delete</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                  <p>List view:</p>
+                </div>
+                <div class="col-md-11">
+                  <label>
+                    <input type="radio" name="" value="">
+                    Individual Pick Lists
+                  </label>
+                  <label>
+                    <input type="radio" name="" value="">
+                    Master Pick List
+                  </label>
+                  <i class="fa fa-wrench" aria-hidden="true"></i>
+                  <a href="#" class="click-add">Choose Columns</a>
+                </div>
+              </div>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No active suppies</p>
+               <p>You can use the box to the upper left to add a new supply.</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="equipment" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Equipment</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <form class="search" role="search">
+                   <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search Equipment" name="srch-term" id="srch-term" data-toggle="modal" data-target="#countModal">
+                     <div class="input-group-btn">
+                       <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                     </div>
+                   </div>
+                 </form>
+                </div>
+                <div class="col-md-4 col-md-offset-5">
+                  <button type="button" name="button" class="click-close pull-right"><i class="fa fa-wrench" aria-hidden="true"></i></button>
+                </div>
+              </div>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No active equipments</p>
+               <p>You can use the box to the upper left to add a new equipment.</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="intra-op-meds" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Intra-op Meds</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <form class="search" role="search">
+                   <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search Medications" name="srch-term" id="srch-term">
+                     <div class="input-group-btn">
+                       <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                     </div>
+                   </div>
+                 </form>
+                </div>
+                <div class="col-md-4 col-md-offset-5">
+                  <p class="pull-left">Show:</p>
+                  <button type="button" name="button" class="light-btn pull-right"><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                  <label class="pull-right">
+                    <input type="checkbox" name="" value="">
+                    Due admins
+                  </label>
+                  <label class="pull-right">
+                    <input type="checkbox" name="" value="">
+                    Canceled admins
+                  </label>
+                </div>
+              </div>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No active medications</p>
+               <p>You can use the box to the upper left to add a new medication.</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="implants" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Implants</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <form class="search" role="search">
+                   <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search Implants/Trays" name="srch-term" id="srch-term">
+                     <div class="input-group-btn">
+                       <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                     </div>
+                   </div>
+                 </form>
+                </div>
+                <div class="col-md-4 col-md-offset-5">
+                  <button type="button" name="button" class="light-btn pull-right"><i class="fa fa-minus click-add"></i></i>Expired</button>
+                  <button type="button" name="button" class="light-btn pull-right"><i class="fa fa-plus-square" aria-hidden="true"></i>Add Existing</button>
+                </div>
+              </div>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No active implants</p>
+               <p>You can use the box to the upper left to add an implant.</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="specimens" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Specimens</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <form class="search" role="search">
+                   <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Add a specimen source" name="srch-term" id="srch-term">
+                     <div class="input-group-btn">
+                       <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                     </div>
+                   </div>
+                 </form>
+                </div>
+                <div class="col-md-4 col-md-offset-5">
+                  <button type="button" name="button" class="click-close pull-left"><i class="fa fa-wrench" aria-hidden="true"></i></button>
+                  <p class="pull-left">Show:</p>
+                  <label class="pull-right">
+                    <input type="checkbox" name="" value="">
+                    Specimens marked as sent <span>(0)</span>
+                  </label>
+                </div>
+              </div>
+             <div class="no-count">
+              <div class="row">
+                <div class="col-md-3">
+                  <p><i class="fa fa-info-circle"></i> Hiding Sent specimens</p>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                  <button type="button" name="button" class="light-btn pull-right">Show me later</button>
+                  <button type="button" name="button" class="light-btn pull-right">Got it</button>
+                </div>
+              </div>
+              <p class="hide-txt">Clearing the checkbox need to 'Specimens marked as sent' above hides specimens that are marked as sent.
+               The number in parentheses shows how many specimens are currently marked as sent.</p>
+             </div>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No specimens collected</p>
+               <div class="no-count-inn pro-cnt">
+                 <p><i class="fa fa-info-circle"></i> The following preference card defaults are available</p>
+                 <div class="surgs">
+                   <div class="row">
+                     <div class="col-md-4">
+                       <p>Specimen</p>
+                     </div>
+                     <div class="col-md-3">
+                       <p>Tests</p>
+                     </div>
+                     <div class="col-md-5">
+                       <p>Frozen Description</p>
+                     </div>
+                   </div>
+                   <hr>
+                   <div class="row">
+                     <div class="col-md-4">
+                       <p>Large Intestine, Right/Ascending Colon - Tissure</p>
+                     </div>
+                     <div class="col-md-3">
+                       <p>TISSUE EXAM</p>
+                     </div>
+                     <div class="col-md-5">
+                       <p><i class="fa fa-certificate"></i></p>
+                     </div>
+                   </div>
+                   <hr>
+                   <div class="row">
+                     <div class="col-md-4">
+                       <p>Large Intestine, Right/Ascending Colon - Tissure</p>
+                     </div>
+                     <div class="col-md-3">
+                       <p>TISSUE EXAM</p>
+                     </div>
+                     <div class="col-md-5">
+
+                     </div>
+                   </div>
+                 </div>
+                 <button type="button" name="button" class="light-btn"><i class="fa fa-plus-square" aria-hidden="true"></i>Add Specimens</button>
+               </div>
+             </div>
+             <button type="button" name="button" class="light-btn"><i class="fa fa-clipboard"></i>Print Labels (0)</button>
+             <button type="button" name="button" class="light-btn"><i class="fa fa-print"></i>Print Requisition (0)</button>
+             <button type="button" name="button" class="light-btn"><i class="fa fa-share-square"></i>Mark as Sent (0)</button>
+             <div class="no-count">
+              <div class="row">
+                <div class="col-md-3">
+                  <p><i class="fa fa-info-circle"></i> Selection Buttons</p>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                  <button type="button" name="button" class="light-btn pull-right">Show me later</button>
+                  <button type="button" name="button" class="light-btn pull-right">Got it</button>
+                </div>
+              </div>
+              <p class="hide-txt">The new smaller buttons above display a menu whicj will allow you to select a larger group of specimens at once</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="site-completion" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Site Completion</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <button type="button" name="button" class="dark-btn"><i class="fa fa-plus-square" aria-hidden="true"></i>New Site</button>
+                  <button type="button" name="button" class="light-btn"><i class="fa fa-plus-square" aria-hidden="true"></i>Abdomen</button>
+                </div>
+                <div class="col-md-4 col-md-offset-5">
+                  <button type="button" name="button" class="click-close pull-right"><i class="fa fa-wrench" aria-hidden="true"></i></button>
+                </div>
+              </div>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No active sites</p>
+               <p>You can use the buttons above to add new sites</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="butt on" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="post-op" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Post-op Skin</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <button type="button" name="button" class="dark-btn"><i class="fa fa-plus-square" aria-hidden="true"></i>New Skin Condition</button>
+                  <button type="button" name="button" class="light-btn"><i class="fa fa-plus-square" aria-hidden="true"></i>Grounding</button>
+                </div>
+                <div class="col-md-4 col-md-offset-5">
+
+                </div>
+              </div>
+             <div class="no-count">
+               <p><i class="fa fa-question-circle" aria-hidden="true"></i> No active skin conditions</p>
+               <p>You can use the buttons above to add new skin conditions</p>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="cosmetic" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Cosmetic Information</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <p>Length of cosmetic precedure (min):</p>
+                </div>
+                <div class="col-md-4">
+                  <form class="search" role="search">
+                   <div class="input-group">
+                     <input type="text" class="form-control" name="srch-term" id="srch-term">
+                     <div class="input-group-btn">
+                       <button class="btn btn-default" type="submit">
+                         <i class="fa fa-clipboard"></i>
+                       </button>
+                     </div>
+                   </div>
+                 </form>
+                </div>
+              </div>
+             <div class="no-count">
+               <em>To update the list of procedures performed, use the procedures section (any update to the of
+                 procedures made here will be discarded).</em>
+               <div class="panel panel-default panel-table">
+                <div class="panel-heading">
+                  <div class="tr">
+                    <div class="td">Procedure</div>
+                    <div class="td">in Cosmetic?</div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="tr">
+                    <div class="td">SURGICAL LAPAROSCOPY WITH PARTIAL COLECTOMY AND ANASTOMOSIS</div>
+                    <div class="td"></div>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9">
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-fast-backward" aria-hidden="true"></i> Restore</button>
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-check" aria-hidden="true"></i> Close</button>
+               </div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="care" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Care Plan</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                  <p>Time taken:</p>
+                </div>
+                <div class="col-md-2">
+                  <form class="time" method="post">
+                    <div class="input-group">
+                     <input class="form-control reg-time" name="reg_time" type="time" value="14:34">
+                     <span class="input-group-addon basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                   </div>
+                  </form>
+                </div>
+                <div class="col-md-2">
+                  <form class="time" method="post">
+                    <div class="input-group">
+                     <input class="form-control reg-date" name="reg_date" type="date">
+                     <span class="input-group-addon basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                   </div>
+                  </form>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" name="button" class="light-btn">Values By</button>
+                </div>
+                <div class="col-md-3 col-md-offset-2">
+                  <p class="pull-left">Show:</p>
+                  <label class="pull-right">
+                    <input type="checkbox" name="" value="">
+                    Details
+                  </label>
+                  <label class="pull-right">
+                    <input type="checkbox" name="" value="">
+                    Last Filed
+                  </label>
+                  <label class="pull-right">
+                    <input type="checkbox" name="" value="">
+                    Row Info
+                  </label>
+                </div>
+              </div>
+              <p class="sin-p click-add">Intra-Procedure Plan</p>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">
+                  <p>Aseptic Technique Maintained</p>
+                </div>
+                <div class="col-md-2">
+                  <i class="fa fa-file"></i>
+                  <button type="button" name="button" class="light-btn">Yes</button>
+                  <button type="button" name="button" class="light-btn">No</button>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">
+                  <p>Patient is Free from Signs and Symptom of injury from Surgical Positioning</p>
+                </div>
+                <div class="col-md-2">
+                  <i class="fa fa-file"></i>
+                  <button type="button" name="button" class="light-btn">Yes</button>
+                  <button type="button" name="button" class="light-btn">No</button>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">
+                  <p>Patient's Skin is Smooth, intact or Consistent with Baseline Skin Assessment</p>
+                </div>
+                <div class="col-md-2">
+                  <i class="fa fa-file"></i>
+                  <button type="button" name="button" class="light-btn">Yes</button>
+                  <button type="button" name="button" class="light-btn">No</button>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-2 col-md-offset-3">
+                  <button type="button" name="button" class="light-btn confirm">Confirm All</button>
+                </div>
+              </div>
+              <div class="row">
+               <div class="col-md-9">
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-fast-backward" aria-hidden="true"></i> Restore</button>
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-check" aria-hidden="true"></i> Close</button>
+                 <button type="button" name="button" class="dark-btn dwn-left"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+               </div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    	  <div class="modal-content">
+        	<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        		<h3 class="modal-title">Browse</h3>
+        	</div>
+        	<div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <form class="search">
+                 <div class="input-group">
+                   <input type="text" class="form-control">
+                   <div class="input-group-btn">
+                     <button class="btn btn-default dark-btn" >Search</button>
+                   </div>
+                 </div>
+               </form>
+              </div>
+              <div class="col-md-3 col-md-offset-3">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active"><a data-toggle="tab" href="#browse">Browse <span>(14)</span></a></li>
+                  <li><a data-toggle="tab" href="#details">Details <span>(17)</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="browse" class="tab-pane fade in active">
+                <div class="view">
+                  <div class="radiowrapper">
+                    <input type="radio" name="filter" id="filt1">
+                    <label for="filt1"><i class="fa fa-th-large"></i></label>
+                  </div>
+                  <div class="radiowrapper">
+                    <input type="radio" name="filter" id="filt2">
+                    <label class="active" for="filt12"><i class="fa fa-align-justify"></i></label>
+                  </div>
+                </div>
+                <div class="browse">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="vr"></div>
+                      <div class="accordion">
+                        <p class="accordion-toggle">Surgeon</p>
+                        <div class="accordion-content">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surg1">
+                            <label for="surg1">Abell Reed</label>
+                          </div>
+                        </div>
+                        <p class="accordion-toggle">Staff</p>
+                        <div class="accordion-content">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="sta1">
+                            <label for="sta1">Abell Reed</label>
+                          </div>
+                        </div>
+                        <p class="accordion-toggle">Anesthesia Staff</p>
+                        <div class="accordion-content">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="anst1">
+                            <label for="anst1">Abell Reed</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="browse-main">
+                        <p>Surgeon</p>
+                        <hr>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="surg-name" id="surgeon1">
+                              <label for="surgeon1">Abell Reed</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="surg-name" id="surgeon2">
+                              <label for="surgeon2">David Hmas</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="surg-name" id="surgeon3">
+                              <label for="surgeon3">Nexx Weist</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p>Staff</p>
+                        <hr>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="staff-name" id="staff1">
+                              <label for="staff1">Abell Reed</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="staff-name" id="staff2">
+                              <label for="staff2">David Hmas</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="staff-name" id="staff3">
+                              <label for="staff3">Nexx Weist</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p>Anesthesia Staff</p>
+                        <hr>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="surg-name" id="an-staff1">
+                              <label for="an-staff1">Abell Reed</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="surg-name" id="an-staff2">
+                              <label for="an-staff2">David Hmas</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="radiowrapper">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input type="radio" name="surg-name" id="an-staff3">
+                              <label for="an-staff3">Nexx Weist</label>
+                            </div>
+                            <div class="col-md-6">
+                              <p>JEHVUIBFRE</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="details" class="tab-pane fade">
+                <div class="details">
+                  <label>
+        						<input type="checkbox" name="check"> <span class="label-text">Surgeon</span>
+        					</label>
+                  <div class="header list">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <p>ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>TItle</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>NPL ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider Type</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Specialty</p>
+                      </div>
+                      <div class="col-md-3">
+                        <p>Practice Name</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-list">
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="loaded">50 records loaded, more records to load.</p>
+                </div>
+                <div class="details">
+                  <label>
+        						<input type="checkbox" name="check"> <span class="label-text">Staff</span>
+        					</label>
+                  <div class="header list">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <p>ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>TItle</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>NPL ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider Type</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Specialty</p>
+                      </div>
+                      <div class="col-md-3">
+                        <p>Practice Name</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-list">
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="loaded">50 records loaded, more records to load.</p>
+                </div>
+                <div class="details">
+                  <label>
+        						<input type="checkbox" name="check"> <span class="label-text">Anesthesia Staff</span>
+        					</label>
+                  <div class="header list">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <p>ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>TItle</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>NPL ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider Type</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Specialty</p>
+                      </div>
+                      <div class="col-md-3">
+                        <p>Practice Name</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-list">
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="loaded">50 records loaded, more records to load.</p>
+                </div>
+              </div>
+            </div>
+        	</div>
+        	<div class="modal-footer">
+        		<div class="btn-group pull-right" role="group" aria-label="group button">
+              <div class="btn-group" role="group">
+                <button type="button" class="dark-btn save" data-action="save" role="button">Accept</button>
+              </div>
+        			<div class="btn-group" role="group">
+        				<button type="button" class="dark-btn" data-dismiss="modal"  role="button">Cancel</button>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="click-add" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    	  <div class="modal-content">
+        	<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        		<h3 class="modal-title">Browse</h3>
+        	</div>
+        	<div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <form class="search">
+                 <div class="input-group">
+                   <input type="text" class="form-control">
+                   <div class="input-group-btn">
+                     <button class="btn btn-default dark-btn" >Search</button>
+                   </div>
+                 </div>
+               </form>
+              </div>
+              <div class="col-md-3 col-md-offset-3">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active"><a data-toggle="tab" href="#click-browse">Browse <span>(14)</span></a></li>
+                  <li><a data-toggle="tab" href="#click-details">Details <span>(17)</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="click-browse" class="tab-pane fade in active">
+                <div class="view">
+                  <div class="radiowrapper">
+                    <input type="radio" name="filter" id="filt1">
+                    <label for="filt1"><i class="fa fa-th-large"></i></label>
+                  </div>
+                  <div class="radiowrapper">
+                    <input type="radio" name="filter" id="filt2">
+                    <label class="active" for="filt12"><i class="fa fa-align-justify"></i></label>
+                  </div>
+                </div>
+                <div class="browse">
+                  <div class="tb-header">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p>Staff</p>
+                      </div>
+                      <div class="col-md-6">
+                        <button type="button" name="button" class="click-close pull-right">Load Next</button>
+                      </div>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="browse-main">
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff1">
+                          <label for="staff1">Abell Reed</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff2">
+                          <label for="staff2">David Hmas</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff3">
+                          <label for="staff3">Nexx Weist</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff1">
+                          <label for="staff1">Abell Reed</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff2">
+                          <label for="staff2">David Hmas</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff3">
+                          <label for="staff3">Nexx Weist</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff1">
+                          <label for="staff1">Abell Reed</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff2">
+                          <label for="staff2">David Hmas</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff3">
+                          <label for="staff3">Nexx Weist</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff1">
+                          <label for="staff1">Abell Reed</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff2">
+                          <label for="staff2">David Hmas</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff3">
+                          <label for="staff3">Nexx Weist</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff1">
+                          <label for="staff1">Abell Reed</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff2">
+                          <label for="staff2">David Hmas</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radiowrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="radio" name="staff-name" id="staff3">
+                          <label for="staff3">Nexx Weist</label>
+                        </div>
+                        <div class="col-md-6">
+                          <p>JEHVUIBFRE</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="click-details" class="tab-pane fade">
+                <div class="details">
+                  <label>
+        						<input type="checkbox" name="check"> <span class="label-text">Surgeon</span>
+        					</label>
+                  <div class="header list">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <p>ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>TItle</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>NPL ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider Type</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Specialty</p>
+                      </div>
+                      <div class="col-md-3">
+                        <p>Practice Name</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-list">
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="loaded">50 records loaded, more records to load.</p>
+                </div>
+                <div class="details">
+                  <label>
+        						<input type="checkbox" name="check"> <span class="label-text">Staff</span>
+        					</label>
+                  <div class="header list">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <p>ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>TItle</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>NPL ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider Type</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Specialty</p>
+                      </div>
+                      <div class="col-md-3">
+                        <p>Practice Name</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-list">
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="loaded">50 records loaded, more records to load.</p>
+                </div>
+                <div class="details">
+                  <label>
+        						<input type="checkbox" name="check"> <span class="label-text">Anesthesia Staff</span>
+        					</label>
+                  <div class="header list">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <p>ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>TItle</p>
+                      </div>
+                      <div class="col-md-1">
+                        <p>NPL ID</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Provider Type</p>
+                      </div>
+                      <div class="col-md-2">
+                        <p>Specialty</p>
+                      </div>
+                      <div class="col-md-3">
+                        <p>Practice Name</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-list">
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail list">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218030</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon1">
+                            <label for="surgeon1">ABELL, Hunter</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>General Surgery</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="surg-detail darklist">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <p>218100</p>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radiowrapper">
+                            <input type="radio" name="surg-name" id="surgeon2">
+                            <label for="surgeon2">ABESRISH, BLAINE</label>
+                          </div>
+                        </div>
+                        <div class="col-md-1">
+                          <p>MD</p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-2">
+                          <p>Physician</p>
+                        </div>
+                        <div class="col-md-2">
+                          <p>Oncology</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="loaded">50 records loaded, more records to load.</p>
+                </div>
+              </div>
+            </div>
+        	</div>
+        	<div class="modal-footer">
+        		<div class="btn-group pull-right" role="group" aria-label="group button">
+              <div class="btn-group" role="group">
+                <button type="button" class="dark-btn save" data-action="save" role="button">Accept</button>
+              </div>
+        			<div class="btn-group" role="group">
+        				<button type="button" class="dark-btn" data-dismiss="modal"  role="button">Cancel</button>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="countModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      	<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      			<h3 class="modal-title" id="lineModalLabel">Category Select</h3>
+      		</div>
+      		<div class="modal-body">
+            <form class="search">
+             <div class="input-group">
+               <span class="pull-left">Search</span>
+               <input type="text" class="form-control">
+               <div class="input-group-btn">
+                 <button class="btn btn-default dark-btn" ><i class="fa fa-search"></i></button>
+               </div>
+             </div>
+           </form>
+           <div class="count-select">
+             <div class="header list">
+               <div class="row">
+                 <div class="col-md-9">
+                   <button type="button" name="button" class="click-close pull-left"><i class="fa fa-caret-down"></i></button>
+                   <p class="pull-left">Title</p>
+                 </div>
+                 <div class="col-md-3">
+                   <p class="pull-right">Number</p>
+                 </div>
+               </div>
+             </div>
+             <div class="details-list">
+               <div class="list">
+                 <div class="radiowrapper">
+                   <input type="radio" name="cou-sel" id="cou-sel1">
+                   <label for="cou-sel1">Closing <span class="pull-right">35</span></label>
+                 </div>
+               </div>
+               <div class="darklist">
+                 <div class="radiowrapper">
+                   <input type="radio" name="cou-sel" id="cou-sel2">
+                   <label for="cou-sel2">Final <span class="pull-right">40</span></label>
+                 </div>
+               </div>
+               <div class="list">
+                 <div class="radiowrapper">
+                   <input type="radio" name="cou-sel" id="cou-sel3">
+                   <label for="cou-sel3">Initial <span class="pull-right">10</span></label>
+                 </div>
+               </div>
+               <div class="darklist">
+                 <div class="radiowrapper">
+                   <input type="radio" name="cou-sel" id="cou-sel4">
+                   <label for="cou-sel4">Next <span class="pull-right">20</span></label>
+                 </div>
+               </div>
+             </div>
+             <p class="loaded">7 categories loaded.</p>
+           </div>
+      		</div>
+      		<div class="modal-footer">
+            <div class="btn-group pull-right" role="group" aria-label="group button">
+              <div class="btn-group" role="group">
+                <button type="button" class="dark-btn save" data-action="save" role="button"><i class="fa fa-check"></i>Accept</button>
+              </div>
+        			<div class="btn-group" role="group">
+        				<button type="button" class="dark-btn" data-dismiss="modal"  role="button"><i class="fa fa-times"></i>Cancel</button>
+        			</div>
+        		</div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="posModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      	<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      			<h3 class="modal-title" id="lineModalLabel">Category Select</h3>
+      		</div>
+      		<div class="modal-body">
+            <form class="search">
+             <div class="input-group">
+               <span class="pull-left">Search</span>
+               <input type="text" class="form-control">
+               <div class="input-group-btn">
+                 <button class="btn btn-default dark-btn" ><i class="fa fa-search"></i></button>
+               </div>
+             </div>
+           </form>
+           <div class="count-select">
+             <div class="header list">
+               <div class="row">
+                 <div class="col-md-9">
+                   <button type="button" name="button" class="click-close pull-left"><i class="fa fa-caret-down"></i></button>
+                   <p class="pull-left">Title</p>
+                 </div>
+                 <div class="col-md-3">
+                   <p class="pull-right">Number</p>
+                 </div>
+               </div>
+             </div>
+             <div class="details-list">
+               <div class="list">
+                 <div class="radiowrapper">
+                   <input type="radio" name="pos-sel" id="pos-sel1">
+                   <label for="pos-sel1">Closing <span class="pull-right">35</span></label>
+                 </div>
+               </div>
+               <div class="darklist">
+                 <div class="radiowrapper">
+                   <input type="radio" name="pos-sel" id="pos-sel2">
+                   <label for="pos-sel2">Final <span class="pull-right">40</span></label>
+                 </div>
+               </div>
+               <div class="list">
+                 <div class="radiowrapper">
+                   <input type="radio" name="pos-sel" id="pos-sel3">
+                   <label for="pos-sel3">Initial <span class="pull-right">10</span></label>
+                 </div>
+               </div>
+               <div class="darklist">
+                 <div class="radiowrapper">
+                   <input type="radio" name="pos-sel" id="pos-sel4">
+                   <label for="pos-sel4">Next <span class="pull-right">20</span></label>
+                 </div>
+               </div>
+             </div>
+             <div class="modal-comt">
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Comment:</p>
+                 </div>
+                 <div class="col-md-10">
+                   <textarea name="name"></textarea>
+                 </div>
+               </div>
+             </div>
+           </div>
+      		</div>
+      		<div class="modal-footer">
+            <div class="btn-group pull-right" role="group" aria-label="group button">
+              <div class="btn-group" role="group">
+                <button type="button" class="dark-btn save" data-action="save" role="button"><i class="fa fa-check"></i>Accept</button>
+              </div>
+        			<div class="btn-group" role="group">
+        				<button type="button" class="dark-btn" data-dismiss="modal"  role="button"><i class="fa fa-times"></i>Cancel</button>
+        			</div>
+        		</div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="comtModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      	<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      			<h3 class="modal-title" id="lineModalLabel">Comment Entry</h3>
+      		</div>
+      		<div class="modal-body">
+            <div class="comt-detail">
+              <p>Comment:</p>
+              <textarea name="name"></textarea>
+            </div>
+      		</div>
+      		<div class="modal-footer">
+            <div class="btn-group pull-right" role="group" aria-label="group button">
+              <div class="btn-group" role="group">
+                <button type="button" class="dark-btn save" data-action="save" role="button">Accept</button>
+              </div>
+        			<div class="btn-group" role="group">
+        				<button type="button" class="dark-btn" data-dismiss="modal"  role="button">Cancel</button>
+        			</div>
+        		</div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

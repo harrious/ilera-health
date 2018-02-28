@@ -1,0 +1,351 @@
+body{
+  overflow-x: hidden;
+  color: #616161;
+}
+
+button:focus{
+  outline: none !important;
+}
+
+.inn-container{
+  background: #f0f0f0;
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.side-holder{
+  position: fixed;
+}
+
+.side-sec{
+  padding-left: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.side-sec p{
+  padding-left: 20px;
+}
+
+.side-sec .form-check{
+  background: none;
+  padding: 0;
+  border: none;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+}
+
+.side-sec .form-check label{
+  margin: 0;
+  padding: 5px 20px 5px 20px;
+  width: 100%;
+}
+
+.side-sec .form-check label:hover{
+  background: #E8E7E5;
+}
+
+.side-sec .form-check label:active{
+  background: #E8E7E5;
+  border-left: 4px solid #484848;
+  padding-left: 16px;
+}
+
+.side-sec .form-check .label-text{
+  font-weight: 400;
+}
+
+.main-view{
+  padding-right: 60px;
+}
+
+.main-view .ct-box{
+  background: #ffffff !important;
+  padding: 20px;
+  border-left: 5px solid #484848;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.main-view .ct-box .staff-head{
+  border-bottom: 2px solid #E2E2E2;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.main-view .complete{
+  font-weight: 400;
+}
+
+
+.ct-box .search{
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.ct-box .search button{
+  background: #484848;
+  color: #ffffff;
+}
+
+.ct-box .search button i{
+ margin-right: 10px;
+}
+
+.dark-btn{
+  background: #484848;
+  color: #ffffff;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.dark-btn i, .light-btn i{
+  margin-right: 10px;
+}
+
+.tm-title{
+  margin-bottom: 0;
+}
+
+.sg-title{
+  width:100%;
+  text-align:left;
+  border-bottom: 2px solid #E2E2E2;
+  line-height:2px;
+  margin:10px 0 20px;
+}
+
+.sg-title span{
+  background: #ffffff;
+  padding-right: 10px;
+}
+
+.time .input-group{
+  width: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.time .reg-time{
+  border-right: none;
+}
+
+.time .basic-addon1{
+  background: none;
+  border-left: none;
+}
+
+.light-btn{
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #F6F6F6;
+}
+
+.click-add{
+  color: #D0021B;
+}
+
+.click-add:focus, .click-add:active{
+  text-decoration: none;
+  color: #D0021B;
+}
+
+.click-close{
+  background: none;
+  border: none;
+}
+
+.ct-box hr{
+  border-top: 2px solid #E2E2E2;
+  margin: 5px 0 10px;
+}
+
+.col1{
+  padding: 0;
+}
+
+.down-btn{
+  width: 45%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Counts */
+
+#counts .search{
+  width: 25%;
+}
+
+#count .cnt-next{
+  float: left;
+}
+
+.no-count{
+  padding: 5px 10px;
+  background: #F8F8F8;
+  border: 1px solid #E1E1E1;
+  margin: 20px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.no-count label{
+  margin: 0;
+}
+
+.drop-cc{
+  border: none;
+  background: none;
+  float: right;
+}
+
+/* Pre-op Skin Condition */
+
+.ct-box .ct-box{
+  margin: 20px 0;
+  padding: 15px;
+  overflow: hidden;
+  border-top: 1px solid #E4E4E4;
+  border-right: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.new-item .site{
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.new-item .site .site-cnt,
+.new-item .site .condition-cnt{
+  margin-left: 20px;
+}
+
+.site .site-cnt .light-btn{
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.site .site-cnt .search{
+  width: 20%;
+  margin-top: 10px;
+}
+
+.site-cnt .search button{
+  background: none;
+  color: #616161;
+  border-left: none;
+}
+
+.site-cnt .search input{
+  border-right: none;
+}
+
+.site .condition-cnt .light-btn{
+  font-size: 13px;
+  width: 13%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.new-item .comments{
+  margin-top: 20px;
+}
+
+.new-item .comments label{
+  font-weight: 400;
+}
+
+.new-item .dark-btn{
+  padding: 6px 12px;
+  margin-left: 2px;
+}
+
+/* Site Preparation */
+
+.tb-ttl{
+  margin-top: 20px;
+}
+
+.new-site-pre .site{
+  margin-bottom: 20px;
+}
+
+.new-site-pre .condition-cnt{
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.new-site-pre .condition-cnt button{
+  width: 22% !important;
+}
+
+.new-site-pre .new-site-list{
+  overflow-y: scroll;
+  height: 48vh;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.new-site-pre .new-site-list button{
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+  margin: 4px 0;
+}
+
+.new-site-pre{
+  display: none
+}
+
+#site-pre .pre-site-btn:focus + .new-site-pre{
+  display: block;
+}
+
+.new-site-pre .comments label{
+  font-weight: 400;
+}
+
+
+
+/* Positioning */
+
+.positioning-cnt .tp-top{
+  margin-bottom: 20px;
+}
+
+.positioning-cnt .search{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END */

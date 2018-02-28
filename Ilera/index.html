@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INTRA-OP</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="inn-container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="side-holder">
+            <div class="side-sec pre-inision">
+              <p>PRE-INISION</p>
+              <div class="form-check">
+      					<label onclick="window.location.href='#staff'">
+      						<input type="checkbox" name="check"> <span class="label-text">Staff</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#counts'">
+      						<input type="checkbox" name="check"> <span class="label-text">Counts</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#pre-op'">
+      						<input type="checkbox" name="check"> <span class="label-text">Pre-op Skin</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label onclick="window.location.href='#site-pre'">
+      						<input type="checkbox" name="check"> <span class="label-text">Site Prep</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Positioning</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Lines/Drains</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Timeout</span>
+      					</label>
+      				</div>
+            </div>
+            <div class="side-sec procedure">
+              <p>PROCEDURE</p>
+              <div class="form-check">
+      					<label onclick="window.location.href='#'">
+      						<input type="checkbox" name="check"> <span class="label-text">Procedures</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Supplies</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Equipment</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Instruments</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Intra-op Meds</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Implants</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Specimens</span>
+      					</label>
+      				</div>
+            </div>
+            <div class="side-sec closing">
+              <p>CLOSING</p>
+              <div class="form-check">
+      					<label onclick="window.location.href='#'">
+      						<input type="checkbox" name="check"> <span class="label-text">Site Completion</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Post-op Skin</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Cosmetic Info</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Care Plan</span>
+      					</label>
+      				</div>
+      				<div class="form-check">
+      					<label>
+      						<input type="checkbox" name="check"> <span class="label-text">Verify</span>
+      					</label>
+      				</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="main-view">
+            <div id="staff" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Staff</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <form class="search" role="search">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="Search Staff" name="srch-term" id="srch-term">
+                 <div class="input-group-btn">
+                   <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                 </div>
+               </div>
+             </form>
+             <button class="add-visitor dark-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>Add visitor</button>
+             <div class="row">
+               <div class="col-md-3 col-md-offset-6">
+                 <p class="tm-title">Time In</p>
+               </div>
+               <div class="col-md-3">
+                 <p class="tm-title">Time Out</p>
+               </div>
+             </div>
+             <p class="sg-title"><span>Surgeons</span></p>
+             <div class="row">
+               <div class="col-md-3">
+                 <p>Hunter Timely, MD</p>
+               </div>
+               <div class="col-md-2">
+                 <p>Panel 1</p>
+               </div>
+               <div class="col-md-1 col1">
+                 <p>Primary</p>
+               </div>
+               <div class="col-md-3">
+                 <form class="time" method="post">
+                   <div class="input-group">
+                 		<input class="form-control reg-time" name="reg_time" type="time" value="14:34">
+                    <span class="input-group-addon basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                  </div>
+                  <button class="light-btn" type="button" name="button"><i class="fa fa-sign-in" aria-hidden="true"></i> Now</button>
+                 </form>
+               </div>
+               <div class="col-md-3">
+                 <form class="time" method="post">
+                   <div class="input-group">
+                 		<input class="form-control reg-time" name="reg_time" type="time" value="14:34">
+                    <span class="input-group-addon basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                  </div>
+                  <button class="light-btn" type="button" name="button"><i class="fa fa-sign-in" aria-hidden="true"></i> Now</button>
+                 </form>
+               </div>
+             </div>
+             <p class="sg-title"><span>Staff</span></p>
+             <div class="row">
+               <div class="col-md-3">
+                 <a class="click-add" href="#">Click to add…</a>
+               </div>
+               <div class="col-md-2"></div>
+               <div class="col-md-2 col1">
+                 <p>Circulator</p>
+               </div>
+               <div class="col-md-5">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a class="click-add" href="#">Click to add…</a>
+               </div>
+               <div class="col-md-2"></div>
+               <div class="col-md-2 col1">
+                 <p>Scrub Person</p>
+               </div>
+               <div class="col-md-5">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="counts" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Counts</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+              <form class="search" role="search">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term">
+                 <div class="input-group-btn">
+                   <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                 </div>
+               </div>
+             </form>
+             <button class="cnt-next light-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>Next</button>
+             <div class="no-count">
+               <label class="complete">
+                 <input type="checkbox" name="check"> <span class="label-text">No counts needed</span>
+               </label>
+             </div>
+             <div class="row">
+               <div class="col-md-3">
+                 <p>Reason</p>
+               </div>
+               <div class="col-md-6">
+                 <p>Summary</p>
+               </div>
+             </div>
+             <p class="sg-title"><span>Panel 1: General with Hunter Timely, MD</span></p>
+             <div class="row">
+               <div class="col-md-3">
+                 <a href="#" class="click-add">Initial</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Items Counted Sponge;</span>
+                 <span>Needles/Sharps;</span>
+                 <span>Instruments</span>
+               </div>
+               <div class="col-md-1">
+                 <div class="dropdown">
+                  <button class="drop-cc dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a href="#" class="click-add">Closing</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Items Counted Sponge;</span>
+                 <span>Needles/Sharps;</span>
+                 <span>Instruments</span>
+               </div>
+               <div class="col-md-1">
+                 <div class="dropdown">
+                  <button class="drop-cc dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a href="#" class="click-add">Final</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Items Counted Sponge;</span>
+                 <span>Needles/Sharps;</span>
+                 <span>Instruments</span>
+               </div>
+               <div class="col-md-1">
+                 <div class="dropdown">
+                  <button class="drop-cc dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="pre-op" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Pre-op Skin Condition</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+             <button class="dark-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>New skin condition</button>
+             <div class="new-item ct-box">
+               <p>New item</p>
+               <div class="site">
+                 <p>Site</p>
+                 <div class="site-cnt">
+                   <button class="light-btn" type="button" name="button">Grounding</button>
+                   <button class="light-btn" type="button" name="button">Operative</button>
+                   <button class="light-btn" type="button" name="button">Overall</button>
+                   <button class="light-btn" type="button" name="button">Positioning</button>
+                   <button class="light-btn" type="button" name="button">Tourniquet</button>
+                   <button class="light-btn" type="button" name="button">Warming</button><br>
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="site condition">
+                 <p>Condition</p>
+                 <div class="condition-cnt">
+                   <button class="light-btn" type="button" name="button">Warm, Dry, Intact</button>
+                   <button class="light-btn" type="button" name="button">Abrasion</button>
+                   <button class="light-btn" type="button" name="button">Ashem Grey</button>
+                   <button class="light-btn" type="button" name="button">Birthmarks</button>
+                   <button class="light-btn" type="button" name="button">Bleeding</button>
+                   <button class="light-btn" type="button" name="button">Blisters</button><br>
+                   <button class="light-btn" type="button" name="button">Blotchy</button>
+                   <button class="light-btn" type="button" name="button">Bruising</button>
+                   <button class="light-btn" type="button" name="button">Burns</button>
+                   <button class="light-btn" type="button" name="button">Cool</button>
+                   <button class="light-btn" type="button" name="button">Cracked</button>
+                   <button class="light-btn" type="button" name="button">Cyanotic</button>
+                 </div>
+                 <button class="light-btn" type="button" name="button">See all values</button>
+               </div>
+               <div class="site comments">
+                 <label for="">Comments <br>
+                   <textarea name="name" rows="4" cols="170"></textarea>
+                 </label>
+               </div>
+               <div class="row">
+                 <div class="col-md-10"></div>
+                 <div class="col-md-2">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="site-pre" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Site Preparation</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+             <button class="dark-btn pre-site-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>New preparation site</button>
+             <div class="new-site-pre ct-box">
+               <div class="row">
+                 <div class="col-md-5">
+                   <p>Site</p>
+                   <div class="new-site-list">
+                     <button class="light-btn" type="button" name="button">Arm Lower</button>
+                     <button class="light-btn" type="button" name="button">Arm Upper</button>
+                     <button class="light-btn" type="button" name="button">Axilla</button>
+                     <button class="light-btn" type="button" name="button">Back</button>
+                     <button class="light-btn" type="button" name="button">Breast</button>
+                     <button class="light-btn" type="button" name="button">Buttocks</button>
+                     <button class="light-btn" type="button" name="button">Cervical Anterior</button>
+                     <button class="light-btn" type="button" name="button">Cervical Posterior</button>
+                     <button class="light-btn" type="button" name="button">Chest</button>
+                     <button class="light-btn" type="button" name="button">Ear</button>
+                     <button class="light-btn" type="button" name="button">Eye</button>
+                     <button class="light-btn" type="button" name="button">Face</button>
+                     <button class="light-btn" type="button" name="button">Finger(s)</button>
+                     <button class="light-btn" type="button" name="button">Flank</button>
+                     <button class="light-btn" type="button" name="button">Foot</button>
+                     <button class="light-btn" type="button" name="button">Groin</button>
+                     <button class="light-btn" type="button" name="button">Hand</button>
+                     <button class="light-btn" type="button" name="button">Head</button>
+                   </div>
+                   <p>Sample</p>
+                   <div class="condition-cnt">
+                     <button class="light-btn" type="button" name="button">Left</button>
+                     <button class="light-btn" type="button" name="button">Right</button>
+                     <button class="light-btn" type="button" name="button">Sample</button>
+                     <button class="light-btn" type="button" name="button">N/A</button>
+                   </div>
+                   <p>Prepped by</p>
+                   <div class="condition-cnt">
+                     <textarea name="name" rows="3" cols="50"></textarea>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-md-offset-1">
+                   <div class="site">
+                     <p>Was skin prep dry before draping</p>
+                     <div class="site-cnt">
+                       <button class="light-btn" type="button" name="button">Yes</button>
+                       <button class="light-btn" type="button" name="button">No</button>
+                     </div>
+                   </div>
+                   <div class="site condition">
+                     <p>Scrub Solustions</p>
+                     <div class="condition-cnt">
+                       <button class="light-btn" type="button" name="button">Alcohol 70%</button>
+                       <button class="light-btn" type="button" name="button">Baby Shampoo</button>
+                       <button class="light-btn" type="button" name="button">Batadine</button>
+                       <button class="light-btn" type="button" name="button">Chlorohexidine</button>
+                       <button class="light-btn" type="button" name="button">Iodine</button>
+                       <button class="light-btn" type="button" name="button">Peroxide</button>
+                       <button class="light-btn" type="button" name="button">Povidone Scrub</button>
+                       <button class="light-btn" type="button" name="button">Sterile Saline</button>
+                     </div>
+                     <button class="light-btn" type="button" name="button">See all values</button>
+                   </div>
+                   <div class="site condition">
+                     <p>Paint Solustions</p>
+                     <div class="condition-cnt">
+                       <button class="light-btn" type="button" name="button">Alcohol 70%</button>
+                       <button class="light-btn" type="button" name="button">Batadine</button>
+                       <button class="light-btn" type="button" name="button">Iodine</button>
+                       <button class="light-btn" type="button" name="button">Peroxide</button>
+                       <button class="light-btn" type="button" name="button">Povidone-Iodine</button>
+                       <button class="light-btn" type="button" name="button">Povidone Solution</button>
+                       <button class="light-btn" type="button" name="button">Sterile Water</button>
+                       <button class="light-btn" type="button" name="button">Sterile Saline</button>
+                       <button class="light-btn" type="button" name="button">None</button>
+                       <button class="light-btn" type="button" name="button">Other</button>
+                     </div>
+                     <button class="light-btn" type="button" name="button">See all values</button>
+                   </div>
+                 </div>
+               </div>
+               <div class="site comments">
+                 <label for="">Comments <br>
+                   <textarea name="name" rows="4" cols="160"></textarea>
+                 </label>
+               </div>
+               <div class="row">
+                 <div class="col-md-10"></div>
+                 <div class="col-md-2">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-3"></div>
+               <div class="col-md-6">
+                 <p class="tb-ttl">Summary</p>
+               </div>
+             </div>
+             <hr>
+             <div class="row">
+               <div class="col-md-3">
+                 <a class="click-add" href="#">Missing site information</a>
+               </div>
+               <div class="col-md-7">
+                 <span>Scrubbed with <b>Missing</b>;</span>
+                 <span>Painted with <b>Missing</b>;</span>
+                 <span>Laterality:<b>N/A</b></span>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-files-o" aria-hidden="true"></i></button>
+               </div>
+               <div class="col-md-1">
+                 <button class="pull-right click-close" type="button" name="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+            <div id="positioning" class="ct-box">
+              <div class="staff-head">
+                <p class="pull-left">Positioning</p>
+                <label class="complete pull-right">
+      						<input type="checkbox" name="check"> <span class="label-text">Complete</span>
+      					</label>
+              </div>
+             <button class="dark-btn" type="button" name="button"><i class="fa fa-plus-square" aria-hidden="true"></i>New Position</button>
+             <div class="positioning-cnt ct-box">
+               <p class="tp-top">SURGICAL LAPAROSCOPY WITH PARTIAL COLECTOMY AND ANASTOMOSIS - Position 1</p>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Position template:</p>
+                 </div>
+                 <div class="col-md-3 site-cnt">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Body:</p>
+                 </div>
+                 <div class="col-md-3 site-cnt">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <i class="fa fa-file-o" aria-hidden="true"></i>
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-1 col-md-offset-1">
+                   <p>Head:</p>
+                 </div>
+                 <div class="col-md-3 site-cnt">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <i class="fa fa-file-o" aria-hidden="true"></i>
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Devices:</p>
+                 </div>
+                 <div class="col-md-3">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="col-md-1 col-md-offset-1">
+                   <p>Devices:</p>
+                 </div>
+                 <div class="col-md-3">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-2">
+                   <p>Devices:</p>
+                 </div>
+                 <div class="col-md-3">
+                   <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Add Count" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>Add</button>
+                      </div>
+                    </div>
+                  </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-md-10"></div>
+                 <div class="col-md-2">
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Accept</button>
+                   <button class="dark-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Cancel</button>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-9"></div>
+               <div class="col-md-3">
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Previous</button>
+                 <button class="dark-btn down-btn" type="button" name="button"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>Next</button>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
